@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  connection: local
+  roles:
+  - role: ../..
+    ci_github_username: test
+    ci_github_password: secret
+    ci_github_owner: levonet
+    ci_github_repo: ansible-ci-github-rm-branch
+    ci_github_ref: heads/test_branch
