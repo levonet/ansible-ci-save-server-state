@@ -3,8 +3,5 @@
   connection: local
   roles:
   - role: ../..
-    ci_github_username: test
-    ci_github_password: secret
-    ci_github_owner: levonet
-    ci_github_repo: ansible-ci-github-rm-branch
-    ci_github_ref: heads/test_branch
+    ci_save_server_state__instances: [ { "host": "test", "port": 1234 } ]
+    ci_save_server_state__file: .state/{{ inventory_hostname }}.conf
