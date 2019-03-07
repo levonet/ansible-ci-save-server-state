@@ -1,4 +1,5 @@
 # CI: Copy the dynamic configuration of servers on localhost
+[![Build Status](https://travis-ci.org/levonet/ansible-ci-save-server-state.svg?branch=master)](https://travis-ci.org/levonet/ansible-ci-save-server-state)
 
 This role is useful for getting some deploy configuration from a remote host for using in next steps.
 
