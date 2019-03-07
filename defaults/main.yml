@@ -1,0 +1,9 @@
+---
+ci_save_server_state__instances: []
+ci_save_server_state__file: ""
+ci_save_server_state__delegate_to: 127.0.0.1
+ci_save_server_state__become: no
+ci_save_server_state__template: |
+  {% for item in ci_save_server_state__instances %}
+  server {{ item.host }}:{{ item.port }};
+  {% endfor -%}

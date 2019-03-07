@@ -1,0 +1,9 @@
+---
+- name: "Load {{ ci_save_server_state__file }}"
+  lineinfile:
+    create: yes
+    path: "{{ ci_save_server_state__file }}"
+    line: "{{ ci_save_server_state__template }}"
+  delegate_to: "{{ ci_save_server_state__delegate_to }}"
+  become: "{{ ci_save_server_state__become }}"
+  when: ci_save_server_state__file | length
